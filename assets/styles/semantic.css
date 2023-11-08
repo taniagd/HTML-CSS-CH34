@@ -26,26 +26,35 @@ body{
 }
 
 header{
-    display: flex;
+    /* Permitirá ajustar los contenidos en función del tamaño de pantalla y espacio disponible*/
+    display: flex; 
+    /* Centra el contenido horizontalmente */
     justify-content: center;
     margin: 0;
 }
 
 h1{
+    text-align: center;
+    padding: 0 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Estilizar barra de navegación */
+/* Llamamos a la clase establecida en la línea 14 del html en el elemento nav */
 .nav-links{
     display: flex;
+    /* Justifica con espacios entre los elementos */
     justify-content: space-between;
     margin: 20px;
     padding:15px;
     font-size:20px;
 }
 
+/* Colocamos clase compartida a los elementos <a> del elemento <nav> */
 .links{
+    /* Elimina el subrayado de los hipervínculos */
     text-decoration: none;
     color: black;
 }
+
 
