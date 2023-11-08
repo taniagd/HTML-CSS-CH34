@@ -1,0 +1,54 @@
+/*Este es un comentario en CSS*/
+
+/*Selector universal. Selecciona TODOS los elementos.*/
+*{
+    background-color:cornflowerblue;
+}
+
+/*Selectores de tipo
+Selecciona todos los elementos con ese nombre*/
+
+h1, h2, h3{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+/*Selector de id. Permite seleccionar un elemento con id específico.NO se comparte con otros elementos*/
+#personal-photo{
+    width: 300px;
+    height: 150px;
+    align-items: center;
+}
+
+/*body {
+    background-color: cornflowerblue;
+}
+
+p{
+    color:brown;
+}
+
+p{
+    color:red;
+}
+*/
+
+table{
+    border:3px dashed green;
+    border-spacing: 4px;
+    border-collapse: collapse;
+}
+
+.tamales-header-items{
+    border: 4px solid blue;
+    /*border-right: 5px solid purple;
+    border-left: 6px solid yellow;
+    border-top: 3px dashed pink;
+    border-bottom: 4px dotted white;*/
+}
+
+td{
+    border: 2px solid red;
+}
+
+
+

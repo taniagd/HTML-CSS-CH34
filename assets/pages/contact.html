@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Contáctanos para tus pedidos </h1>
+    </header>
+    <main>
+        <section>
+            <form action="https://formsubmit.co/tania.gayosso@idr.edu.mx" method="POST"> <!--En action colocamos la url a donde mandaremos la info del formulario.
+            En atributo method indicamos el   tipo de método http que utilizaremos.-->
+                
+                <fieldset> <!--Permite agrupar por campos-->
+                    <legend> Datos básicos de contacto </legend>
+                    <label for="">Nombre: <input type="text" placeholder="Nancy" name="name"></label>
+                    <br>
+
+                    <!-- Es importante colocar el atributo name, porque es el nombre del elemento utilizado por el servidor para identificar los campos en el envío del formulario-->
+
+                    Apellido: <input type="text" placeholder="Moreno" name="last-name">
+                    <br>
+                    Correo electrónico: <input type="email" placeholder="nancymoreno@gmail.com" name="email">
+                    <br>
+                    Teléfono:<input type="tel" placeholder="4445153596">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos del pedido</legend>
+                    Número de tamales: <input type="number" min="30" max="300" required>
+                    <br>
+                    Litros de atole: <input type="number" min="3" max="50">
+                    <br>
+                    Fecha del evento: <input type="date" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Datos del envío</legend>
+                    <!--Nuestro usuario tiene que hacer scroll infinito hasta encontrar la opción deseada-->
+                    <select name="stores" id="stores">
+                        <option value="Sucursal-Atizapan">Sucursal Atizapán de Zaragoza</option>
+                        <option value="Sucursal-Ecatepec"> Sucursal Ecatepec</option>
+                        <option value="Sucursal-Magdalena"> Sucursal Magdalena Contreras</option>
+                        <option value="Sucursal-Atizapan">Sucursal Atizapán de Zaragoza</option>
+                        <option value="Sucursal-Ecatepec"> Sucursal Ecatepec</option>
+                        <option value="Sucursal-Magdalena"> Sucursal Magdalena Contreras</option>
+                        <option value="Sucursal-Atizapan">Sucursal Atizapán de Zaragoza</option>
+                        <option value="Sucursal-Ecatepec"> Sucursal Ecatepec</option>
+                        <option value="Sucursal-Magdalena"> Sucursal Magdalena Contreras</option>
+                    </select>
+                    <br>
+                    <!-- Le damos opción al usuario para escoger a partir de las primeras letras de lo que busca -->
+                    <input list="branch">
+                    <datalist id="branch">
+                        <option value="Sucursal-Atizapan">Sucursal Atizapán</option>
+                        <option value="Sucursal-Coyoacan"> Sucursal Coyoacán</option>
+                        <option value="Sucursal-Ecatepec">Sucursal Ecatepec</option>
+                    </datalist>
+                    <br>
+                    
+                    <!-- El valor de for debe ser igual al id del input correspondiente-->
+                    <label for="pick-up"><input id="pick-up" type="radio" name="type-of-delivery"> Recoger en sucursal </label>
+
+                    <label for="delivery"><input id="delivery" type="radio" name="type-of-delivery"> Envío a domicilio</label>
+                    
+                    <br>
+
+                    <!--Casilla de verificación-->
+                    <input type="checkbox" required> Acepto los términos y condiciones
+                    <br>
+                    <button type="submit"> Ámonos recio con los tamales </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
