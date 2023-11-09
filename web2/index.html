@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aquí encontrarás las mejores ofertas">
+        <meta name="robots" content="index, follow">
+        <title>Mi primer HTML</title>
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="./assets/img/tamales.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+        <!--Se enlazó el CSS Externo-->
+        <link rel="stylesheet" href="styles.css">
+
+        <!--Estilo interno o embebido-->
+        <style>
+            p{
+              color:pink;  
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Sobre mí: Tania Gayosso</h1> <!--Tenemos del h1 al h6 para encabezados-->
+
+        <img id="personal-photo"
+        src="./assets/img/taniadarks.jpg" alt="Foto de Tania vestida de negro, viendo al frente y con fondo lúgubre" title="Foto de Tania Gayosso">
+        
+        <!-- Estilo en linea -->
+        <p style="color:green; text-align:center;"> Hola, tengo 26 años, soy originaria de la CDMX, pero vivo en    Edomex actualmente. 
+            Tengo 2 hermanos: Jorge y César y <strong>3 perritos:</strong> Pascacio, Dastan y Chiqutín.
+            Estudié Literatura Intercultural en la UNAM, ENES Morelia.
+        </p>
+
+        <h2>Mis gustos</h2>
+
+        <!--Tenemos 2 tipos de listas: ordenadas, desordenadas y de descripción-->
+
+        <p style="color:violet;">Mi top 5 de canciones favoritas del momento son:</p>
+
+        <ol> <!--Lista ordenada-->
+            <li> <i>O me voy o te vas</i> - Natanael Cano</li>
+            <li> Roothoppas - Masta Quba ft. Prince Jaguar</li>
+            <li> Lady Gaga - Peso Pluma </li>
+            <li> Bzrp Session #23 - Paulo Londra ft. Bizarrap</li>
+            <li> Las Monjitas - Grupo Exterminador </li>
+        </ol>
+
+        <p> Mis cosas favs del mundo son:</p>
+
+        <ul>
+            <li>Sabor de helado: Beso de ángel</li>
+            <li> Comida: Enchiladas verdes </li>
+            <li> Música: Rap y pop punk </li>
+            <li> Color: Verde </li>
+                <ul>
+                    <li> Verde-azulado</li>
+                    <li> Verde bandera</li>
+                        <ol>
+                            <li>Bandera de México</li>
+                            <li>Bandera de Portugal</li>
+                        </ol>
+                </ul>
+            <li> Películas: <i> Te prometo anarquía </i> y <i> High School Musical 2</i> </li>
+        </ul>
+
+        <h3>Datos random</h3>
+
+        <p>Te dejo una foto de un gatito</p>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Gatito naranja volteando a ver a la cámara. Tiene largos bigotes y orejas puntiagudas. Es muy adorable.">
+
+        <p> Mis papás venden tamales, así que te contaré sobre ellos</p>
+
+        <dl> <!--Lista descriptiva-->
+            <dt> Tamal oaxaqueño</dt> <!-- Elemento a describir-->
+            <dd> Harina de maíz con salsa verde o roja acompañada de una pieza completa de pollo (pierna o muslo) y contiene hojas de laurel, envuelta en hoja de plátano </dd> <!--Descripción-->
+            <br> <!--Salto de línea-->
+            <dt> Tamal de hoja de maíz</dt>
+            <dd> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae amet necessitatibus dolores quae magni nostrum rem provident minima voluptatum hic aut laborum recusandae dolor iusto ab, error rerum quia qui.</dd>
+        </dl>
+
+        <!--Elementos en línea y bloque-->
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia illum natus earum mollitia nulla eveniet ea! Mollitia iste numquam, voluptate nihil veritatis ut, sed unde tempore necessitatibus magnam, exercitationem incidunt.</p><p>Otro párrafo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores quae dolores fugiat dolorem dolor ex facere vel ullam eum iusto at enim error cupiditate optio sed, ab harum delectus.</p>
+        <span >Holi,soy un elemento en línea</span><span>Holix2</span>
+
+        <br>
+
+        <!--Tablas-->
+        <table>
+            <thead> <!-- Encabezado de la tabla-->
+                <tr>
+                    <th colspan="5"> Promociones de la semana </th> <!--Colspan es un atributo que permite fusionar celdas-->
+                    <th colspan="2"> Promociones del fin de semana </th>
+                </tr>
+               <tr> <!--Table row-fila-->
+                    <th class="tamales-header-items">Tamales solos </th> <!-- Celdas de encabezado-->
+                    <th class="tamales-header-items">Tortas</th>
+                    <th class="tamales-header-items">Atoles</th>
+                    <th class="tamales-header-items">Tamales especiales de maíz </th>
+                    <th class="tamales-header-items">Tamales especiales oaxaqueños</th>
+               </tr>
+            </thead>
+            <tbody> <!--Cuerpo de la tabla-->
+                <tr>
+                    <td> $15.00 MXN </td> <!--Datos de la tabla-->
+                    <td> $18.00 MXN </td>
+                    <td> $35.00 MXN </td>
+                    <td> $20.00 MXN </td>
+                    <td> $30.00 MXN </td>
+                </tr>
+                <tr>
+                    <td> 0.86 USD</td>
+                    <td> 1.03 USD </td>
+                    <td> 2 USD </td>
+                    <td> 1.14 USD </td>
+                    <td> 1.71 USD </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
